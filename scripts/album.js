@@ -28,19 +28,34 @@ var albumMarconi = {
     ]
 };
 
-var createSongRow = function(songNumber, songName, songLength) {
-    var template = 
-        '<tr class="album-view-song-item">'
-        '   <td class="song-item-number">' + songNumber + '</td>'
-        '   <td class="song-item-title">' + songName + '</td>'
-        '   <td class="song-item-duration">' + songLength + '</td>'
-        '</tr>'
-        ;
-    
-        return template;
+var albumBarcalona = {
+    title: 'The Unicorn',
+    artist: 'Fred Garfield',
+    label: 'Atlantic',
+    year: '1987',
+    albumArtUrl: 'assets/images/album_covers/01.png',
+    songs: [
+        { title: 'Hello, Brooklyn?', duration: '3:21' },
+        { title: 'Queen, ring, love', duration: '4:11' },
+        { title: 'Fits in the newspaper', duration: '5:15'},
+        { title: 'Can you see me now?', duration: '2:10' },
+        { title: 'Wrong hash number', duration: '1:13'}
+    ]
 };
 
-var setCurrentAlbum = function(album) {
+var createSongRow = function (songNumber, songName, songLength) {
+    var template =
+        '<tr class="album-view-song-item">'
+      + '  <td class="song-item-number">' + songNumber + '</td>'
+      + '  <td class="song-item-title">' + songName + '</td>'
+      + '  <td class="song-item-duration">' + songLength + '</td>'
+      + '</tr>'
+      ;
+    
+    return template;
+};
+
+var setCurrentAlbum = function (album) {
     var albumTitle = document.getElementsByClassName('album-view-title')[0];
     var albumArtist = document.getElementsByClassName('album-view-artist')[0];
     var albumReleaseInfo = document.getElementsByClassName('album-view-release-info')[0];
