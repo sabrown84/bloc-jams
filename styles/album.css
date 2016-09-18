@@ -13,6 +13,12 @@ body.album {
     width: 60%;
 }
 
+.album-view-details {
+    position: relative;
+    top: 1.5rem;
+    padding: 1rem;
+}
+
 .album-view-details .album-view-title {
     font-weight: 300;
     font-size: 2rem;
@@ -28,7 +34,7 @@ body.album {
     font-size: 0.75rem;
 }
 
-.album-view-son-list {
+.album-view-song-list {
     width: 90%;
     margin: 1.5rem auto;
     font-weight: 300;
@@ -43,7 +49,6 @@ body.album {
 
 .song-item-number {
     width: 5%;
-    min-width: 30px;
 }
 
 .song-item-title {
