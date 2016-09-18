@@ -115,9 +115,9 @@ var currentlyPlayingSong = null ;
 window.onload = function() {
     setCurrentAlbum(albumPicasso);
     
-    findParentByClassName.addEventListener(function(event) {
-        if(event.target.parentElement.className === '.song-item-number')
-    });
+    //findParentByClassName.addEventListener(function(event) {
+      //  if(event.target.parentElement.className === '.song-item-number')
+    //});
 
     songListContainer.addEventListener('mouseover', function(event) {
         if (event.target.parentElement.className === 'album-view-song-item') {
@@ -143,4 +143,4 @@ window.onload = function() {
             clickHandler(event.target);
         });
     }
-};
+}
