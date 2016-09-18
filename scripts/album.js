@@ -28,20 +28,20 @@ var albumMarconi = {
     ]
 };
 
-//var albumBarcalona = {
-  //  title: 'The Unicorn',
-    //artist: 'Fred Garfield',
-    //label: 'Atlantic',
-    //year: '1987',
-    //albumArtUrl: 'assets/images/album_covers/08.png',
-    //songs: [
-      //  { title: 'Hello, Brooklyn?', duration: '3:21' },
-        //{ title: 'Queen, ring, love', duration: '4:11' },
-        //{ title: 'Fits in the newspaper', duration: '5:15'},
-        //{ title: 'Can you see me now?', duration: '2:10' },
-        //{ title: 'Wrong hash number', duration: '1:13'}
-    //]
-//};
+var albumBarcalona = {
+    title: 'The Unicorn',
+    artist: 'Fred Garfield',
+    label: 'Atlantic',
+    year: '1987',
+    albumArtUrl: 'assets/images/album_covers/08.png',
+    songs: [
+        { title: 'Hello, Brooklyn?', duration: '3:21' },
+        { title: 'Queen, ring, love', duration: '4:11' },
+        { title: 'Fits in the newspaper', duration: '5:15'},
+        { title: 'Can you see me now?', duration: '2:10' },
+        { title: 'Wrong hash number', duration: '1:13'}
+    ]
+};
 
 var createSongRow = function (songNumber, songName, songLength) {
     var template =
@@ -77,18 +77,18 @@ var setCurrentAlbum = function (album) {
 window.onload = function() {
     setCurrentAlbum(albumPicasso);
     
-    //var count = 0;
-    //var albumImage = document.getElementsByClassName('album-cover-art')[0];
-   // var albumCatalog = [albumMarconi, albumBarcalona, albumPicasso];
+    var count = 0;
+    var albumImage = document.getElementsByClassName('album-cover-art')[0];
+    var albumCatalog = [albumMarconi, albumBarcalona, albumPicasso];
     
-    //albumImage.addEventListener("click", function(event) {
-       // setCurrentAlbum(albumCatalog[count]);
+    albumImage.addEventListener("click", function(event) {
+        setCurrentAlbum(albumCatalog[count]);
         
-       // count++;
+        count++;
         
-        //if(count === albumCatalog.duration ) {
-        //    count = 0;
-       // }
+        if(count === albumCatalog.duration ) {
+            count = 0;
+        }
         
-  //  }, false);
+    }, false);
 };
