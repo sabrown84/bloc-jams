@@ -28,6 +28,7 @@ var animatePoints = function(points) {
                 revealSecondPoint();
                 revealThirdPoint();
             };
+
 window.onload = function() {
     if (window.innerHeight > 950) {
         animatePoints(pointsArray);
