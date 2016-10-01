@@ -8,6 +8,11 @@
     z-index: 100;
 }
 
+.player-bar a {
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
 .player-bar a,
 .player-bar a:hover {
     color: white;
@@ -114,8 +119,8 @@
     margin-top: -0.25rem;
     border-radius: 50%;
     cursor: pointer;
-    -webkit-transition: all 100ms ease-in-out;
-        -moz-transition: all 100ms ease-in-out;
+    /*-webkit-transition: all 100ms ease-in-out;
+        -moz-transition: all 100ms ease-in-out;*/
             transition: width 100ms ease-in-out,
                         height 100ms ease-in-out,
                         margin-top 100ms ease-in-out,
@@ -179,9 +184,4 @@
     .player-bar .currently-playing .artist-song-mobile {
         display: block;
     }
-}
-
-.player-bar a {
-    font-size: 1.1rem;
-    vertical-align: middle;
 }
